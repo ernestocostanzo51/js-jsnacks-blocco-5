@@ -18,6 +18,16 @@ const students = [
     class: '5B'
   },
 ];
-
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+/*const ricerca = []
+for (i=0; i<students.length; i++){
+  let studente = students[i]
+  if(studente.id === 2)
+    ricerca.push(students[i])
+}*/
+
+const ricerca = students.filter(studente => studente.id === 2)
+
+console.log(ricerca)
